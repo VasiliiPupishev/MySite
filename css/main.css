@@ -586,31 +586,12 @@ a:hover
     background: rgba(81, 181, 187, .7);
 }
 
-#examples .showcase .item:hover .info-even
+#examples .showcase .item:hover .info-even, #examples .showcase .item:hover .info-odd
 {
     width: 100%;
 }
 
-#examples .showcase .item:hover .info-odd
-{
-    width: 100%;
-}
-
-#examples .showcase .item .info-even .container-mid
-{
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-    padding: 0 6rem;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-
-#examples .showcase .item .info-odd .container-mid
+#examples .showcase .item .info-even .container-mid, #examples .showcase .item .info-odd .container-mid
 {
     position: absolute;
     top: 50%;
@@ -625,7 +606,7 @@ a:hover
 }
 
 
-#examples  .showcase .item .info-even .container-mid h5
+#examples  .showcase .item .info-even .container-mid h5, #examples  .showcase .item .info-odd .container-mid h5
 {
     -webkit-transform: translateX(4vh);
         -ms-transform: translateX(4vh);
@@ -636,18 +617,7 @@ a:hover
     color: #fff;
 }
 
-#examples  .showcase .item .info-odd .container-mid h5
-{
-    -webkit-transform: translateX(4vh);
-        -ms-transform: translateX(4vh);
-            transform: translateX(4vh);
-
-    opacity: 0;
-	text-align: center;
-    color: #fff;
-}
-
-#examples .showcase .item .info-even .container-mid h4
+#examples .showcase .item .info-even .container-mid h4, #examples .showcase .item .info-odd .container-mid h4
 {
     -webkit-transform: translateX(4vh);
         -ms-transform: translateX(4vh);
@@ -659,19 +629,7 @@ a:hover
     color: #fff;
 }
 
-#examples .showcase .item .info-odd .container-mid h4
-{
-    -webkit-transform: translateX(4vh);
-        -ms-transform: translateX(4vh);
-            transform: translateX(4vh);
-
-    font-size: 2rem;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-}
-
-#examples .showcase .item:hover .info-even .container-mid h5
+#examples .showcase .item:hover .info-even .container-mid h5, #examples .showcase .item:hover .info-odd .container-mid h5
 {
     -webkit-transition: .2s ease .2s;
          -o-transition: .2s ease .2s;
@@ -683,7 +641,7 @@ a:hover
     opacity: 1;
 }
 
-#examples .showcase .item:hover .info-odd .container-mid h5
+#examples .showcase .item:hover .info-even .container-mid h4, #examples .showcase .item:hover .info-odd .container-mid h4
 {
     -webkit-transition: .2s ease .2s;
          -o-transition: .2s ease .2s;
@@ -695,31 +653,7 @@ a:hover
     opacity: 1;
 }
 
-#examples .showcase .item:hover .info-even .container-mid h4
-{
-    -webkit-transition: .2s ease .2s;
-         -o-transition: .2s ease .2s;
-            transition: .2s ease .2s;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
-
-    opacity: 1;
-}
-
-#examples .showcase .item:hover .info-odd .container-mid h4
-{
-    -webkit-transition: .2s ease .2s;
-         -o-transition: .2s ease .2s;
-            transition: .2s ease .2s;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
-
-    opacity: 1;
-}
-
-#examples .showcase .item .info-even .container-mid p
+#examples .showcase .item .info-even .container-mid p, #examples .showcase .item .info-odd .container-mid p
 {
     position: relative;
 
@@ -733,21 +667,7 @@ a:hover
     opacity: 0;
 }
 
-#examples .showcase .item .info-odd .container-mid p
-{
-    position: relative;
-
-    padding-left: 2.7rem;
-
-    -webkit-transform: translateX(4vh);
-        -ms-transform: translateX(4vh);
-            transform: translateX(4vh);
-    letter-spacing: .025em;
-
-    opacity: 0;
-}
-
-#examples .showcase .item:hover .info-even .container-mid p
+#examples .showcase .item:hover .info-even .container-mid p, #examples .showcase .item:hover .info-odd .container-mid p
 {
     -webkit-transition: .2s ease .3s;
          -o-transition: .2s ease .3s;
@@ -759,36 +679,7 @@ a:hover
     opacity: 1;
 }
 
-#examples .showcase .item:hover .info-odd .container-mid p
-{
-    -webkit-transition: .2s ease .3s;
-         -o-transition: .2s ease .3s;
-            transition: .2s ease .3s;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
-
-    opacity: 1;
-}
-
-#examples .showcase .item .info-even .container-mid p:before
-{
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 1.1em;
-    height: 1px;
-
-    content: '';
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-
-    background: #fff;
-}
-
-#examples .showcase .item .info-odd .container-mid p:before
+#examples .showcase .item .info-even .container-mid p:before, #examples .showcase .item .info-odd .container-mid p:before
 {
     position: absolute;
     top: 50%;
@@ -841,7 +732,7 @@ a:hover
     margin-bottom: 0;
 }
 
-#work .showcase .item .info-even
+#work .showcase .item .info-even, #work .showcase .item .info-odd
 {
     position: absolute;
     z-index: 100;
@@ -859,35 +750,12 @@ a:hover
     background: #51b5bb;
 }
 
-#work .showcase .item .info-odd
-{
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-
-    width: 0;
-    height: 100%;
-
-    -webkit-transition: .25s ease;
-         -o-transition: .25s ease;
-            transition: .25s ease;
-
-    color: #fff;
-    background: #51b5bb;
-}
-
-#work .showcase .item:hover .info-even
+#work .showcase .item:hover .info-even, #work .showcase .item:hover .info-odd
 {
     width: 100%;
 }
 
-#work .showcase .item:hover .info-odd
-{
-    width: 100%;
-}
-
-#work .showcase .item .info-even .container-mid
+#work .showcase .item .info-even .container-mid, #work .showcase .item .info-odd .container-mid
 {
     position: absolute;
     top: 50%;
@@ -901,21 +769,7 @@ a:hover
             transform: translateY(-50%);
 }
 
-#work .showcase .item .info-odd .container-mid
-{
-    position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-    padding: 0 6rem;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-
-#work .showcase .item .info-even .container-mid h5
+#work .showcase .item .info-even .container-mid h5, #work .showcase .item .info-odd .container-mid h5
 {
     -webkit-transform: translateX(4vh);
         -ms-transform: translateX(4vh);
@@ -925,7 +779,7 @@ a:hover
     color: #fff;
 }
 
-#work .showcase .item .info-even .container-mid h4
+#work .showcase .item .info-even .container-mid h4, #work .showcase .item .info-odd .container-mid h4
 {
     -webkit-transform: translateX(4vh);
         -ms-transform: translateX(4vh);
@@ -937,7 +791,7 @@ a:hover
     color: #fff;
 }
 
-#work .showcase .item:hover .info-even .container-mid h5
+#work .showcase .item:hover .info-even .container-mid h5, #work .showcase .item:hover .info-odd .container-mid h5
 {
     -webkit-transition: .2s ease .2s;
          -o-transition: .2s ease .2s;
@@ -949,7 +803,7 @@ a:hover
     opacity: 1;
 }
 
-#work .showcase .item:hover .info-even .container-mid h4
+#work .showcase .item:hover .info-even .container-mid h4, #work .showcase .item:hover .info-odd .container-mid h4
 {
     -webkit-transition: .2s ease .2s;
          -o-transition: .2s ease .2s;
@@ -961,7 +815,7 @@ a:hover
     opacity: 1;
 }
 
-#work .showcase .item .info-even .container-mid p
+#work .showcase .item .info-even .container-mid p, #work .showcase .item .info-odd .container-mid p
 {
     position: relative;
 
@@ -975,7 +829,7 @@ a:hover
     opacity: 0;
 }
 
-#work .showcase .item:hover .info-even .container-mid p
+#work .showcase .item:hover .info-even .container-mid p, #work .showcase .item:hover .info-odd .container-mid p
 {
     -webkit-transition: .2s ease .3s;
          -o-transition: .2s ease .3s;
@@ -987,7 +841,7 @@ a:hover
     opacity: 1;
 }
 
-#work .showcase .item .info-even .container-mid p:before
+#work .showcase .item .info-even .container-mid p:before, #work .showcase .item .info-odd .container-mid p:before
 {
     position: absolute;
     top: 50%;
