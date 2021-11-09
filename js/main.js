@@ -41,6 +41,28 @@ document.addEventListener('DOMContentLoaded', function(){
         viewFactor: 0.4,
         scale: 1,
     });
+	
+	sr.reveal(".scroll-animated-from-left", { 
+        duration: 600,
+        delay: 0,
+        origin: "left",
+        rotate: { x: 0, y: 0, z: 0 },
+        opacity: 0,
+        distance: "20vh",
+        viewFactor: 0.4,
+        scale: 1,
+    });
+	
+	sr.reveal(".scroll-animation-fade-up", { 
+        duration: 600,
+        delay: 0,
+        origin: "top",
+        rotate: { x: 0, y: 0, z: 0 },
+        opacity: 0,
+        distance: "20vh",
+        viewFactor: 0.4,
+        scale: 1,
+    });
 });
 
 function calculateAge(year, month, day) {
