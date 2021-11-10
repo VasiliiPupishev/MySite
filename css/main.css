@@ -1,6 +1,12 @@
 html
 {
     font-size: 10px;
+	-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		 -khtml-user-select: none;
+		   -moz-user-select: none;
+			-ms-user-select: none;
+				user-select: none;
 }
 
 body
@@ -23,9 +29,11 @@ ul{
 	text-align: center;
 }
 
-examples-video{
+examples-video
+{
 	position: relative;
-	width: 100%;
+	width: 560;
+	height: 315;
 }
 
 h1,
@@ -37,7 +45,7 @@ h6
 {
     font-family: 'Abril Fatface', cursive;
     font-weight: normal;
-
+	text-align: center;
     letter-spacing: .05em;
 
     color: #000;;
@@ -813,6 +821,7 @@ a:hover
         -ms-transform: translateX(0);
             transform: translateX(0);
 
+
     opacity: 1;
 }
 
@@ -1229,4 +1238,20 @@ a:hover
 {
     color: #000;
     border-bottom: 1px solid #111;
+}
+
+examples-description 
+{
+	max-width: 860px;
+	width: 90vw;
+    padding: 1vh;
+    text-align: center;
+}
+
+.spoiler :checked ~ div {
+  display: block;
+}
+
+.spoiler input, .spoiler div  { 
+  display: none; 
 }
