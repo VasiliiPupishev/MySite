@@ -6,13 +6,21 @@ html
 body
 {
     font-family: 'Arapey', serif;
-    font-weight: 300;
+    font-weight: 450;
     font-style: normal;
 
     color: #000;
     background: #fff;
 
     -webkit-font-smoothing: antialiased;
+}
+
+li{
+	text-align: center;
+}
+
+ul{
+	text-align: center;
 }
 
 h1,
@@ -63,6 +71,7 @@ h6
 p
 {
     font-size: 1.8rem;
+	text-align: center;
 }
 
 a,
@@ -245,7 +254,7 @@ a:hover
 
 .content-area .content-area-inner section
 {
-    max-width: 520px;
+    max-width: 840px;
     margin: 0 auto 18vh auto;
 }
 
