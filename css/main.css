@@ -23,6 +23,11 @@ ul{
 	text-align: center;
 }
 
+examples-video{
+	position: relative;
+	width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -254,7 +259,7 @@ a:hover
 
 .content-area .content-area-inner section
 {
-    max-width: 840px;
+    max-width: 860px;
     margin: 0 auto 18vh auto;
 }
 
@@ -901,29 +906,29 @@ a:hover
     outline: none !important;
 }
 
-.featherlight .featherlight-content .work-lightbox
+.featherlight .featherlight-content .work-lightbox, .featherlight .featherlight-content .examples-lightbox
 {
-    max-width: 1000px;
-    padding: 6vh;
-
+    max-width: 860px;
+	width: 90vw;
+    padding: 1vh;
     text-align: center;
 }
 
-.featherlight .featherlight-content .work-lightbox img
+.featherlight .featherlight-content .work-lightbox img, .featherlight .featherlight-content .examples-lightbox img
 {
     margin: 0 auto 4vh auto;
 }
 
-.featherlight .featherlight-content .work-lightbox p.subline
+.featherlight .featherlight-content .work-lightbox p.subline, .featherlight .featherlight-content .examples-lightbox p.subline
 {
     margin-bottom: 1em;
 
     letter-spacing: .025em;
 }
 
-.featherlight .featherlight-content .work-lightbox p
+.featherlight .featherlight-content .work-lightbox p, .featherlight .featherlight-content .examples-lightbox p
 {
-    max-width: 520px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
