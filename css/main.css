@@ -29,11 +29,13 @@ ul{
 	text-align: center;
 }
 
-examples-video
+iframe
 {
-	position: relative;
-	width: 560;
-	height: 315;
+	position: static;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 h1,
@@ -1249,5 +1251,6 @@ a:hover
 	max-width: 860px;
 	width: 90vw;
     text-align: center;
+	background: rgba(148, 148, 148, 0.5);
+	border-radius: 0.5rem;
 }
-
