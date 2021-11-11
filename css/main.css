@@ -11,7 +11,7 @@ html
 
 body
 {
-    font-family: 'Arapey', serif;
+    font-family: 'IBM Plex Sans', serif;
     font-weight: 450;
     font-style: normal;
 
@@ -44,7 +44,7 @@ h4,
 h5,
 h6
 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'IBM Plex Sans', serif;
     font-weight: normal;
 	text-align: center;
     letter-spacing: .05em;
@@ -556,16 +556,11 @@ a:hover
     cursor: pointer;
 
     border-radius: 0.5rem;
-    background: #111;
+    background: #fff;
 	
 	margin-bottom: 5vh;
 	
-	/*width: -webkit-fit-content;
-	height: -webkit-fit-content;*/
-	
 	display: inline-block;
-	/*width: -moz-fit-content;
-	height: -moz-fit-content;*/
 }
 
 #examples .showcase .item:last-child
@@ -1251,10 +1246,11 @@ a:hover
 
 #examples .showcase .examples-description
 {
+	display:none;
 	max-width: 860px;
 	width: 90vw;
     text-align: center;
-	background: rgba(148, 148, 148, 0.5);
+	background: rgba(81, 181, 187, .4);
 	border-radius: 0.5rem;
-	z-index: 289;
+	margin:0%;
 }
