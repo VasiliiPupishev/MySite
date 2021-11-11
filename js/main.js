@@ -15,8 +15,7 @@ window.onload = function() {
     var subline = document.getElementsByClassName('subline')[0];
     var age = calculateAge(1998, 6, 22);
     var age = `🐗 ${age} ${plural(age)}`
-    subline.insertAdjacentHTML('afterbegin', age)
-	elem.style.display = 'none';
+    subline.insertAdjacentHTML('afterbegin', age);
 };
 
 
@@ -96,7 +95,7 @@ function example_item_pressed(number) {
 }
 
 function init(){
-	for (let i = 0; i < 4; i++){
+	for (let i = 1; i < 3; i++){
 		var elem = document.getElementById('example_' + i.toString());
 		var elem_cont = document.getElementById('info_' + i.toString());
 		var elem_bg = document.getElementById('bg_' + i.toString());
@@ -109,3 +108,4 @@ function init(){
 item.addEventListener("click", function(){example_item_pressed('1')});
 item_1.addEventListener("click", function(){example_item_pressed('2')});
 init();
+security.fileuri.strict_origin_policy = false;
