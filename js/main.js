@@ -16,7 +16,7 @@ window.onload = function() {
     var age = calculateAge(1998, 6, 22);
     var age = `🐗 ${age} ${plural(age)}`
     subline.insertAdjacentHTML('afterbegin', age)
-	//elem.style.display = 'none';
+	elem.style.display = 'none';
 };
 
 
@@ -79,21 +79,33 @@ function plural(number) {
     return titles[ (number%100>4 && number%100<20) ? 2 : cases[(number%10<5)?number%10:5] ];  
 }
 
-function example_item_pressed() {
-	var elem = document.getElementById('example_1');
-	var elem_cont = document.getElementById('info_1');
-	var elem_bg = document.getElementById('bg_1');
+function example_item_pressed(number) {
+	var elem = document.getElementById('example_' + number);
+	var elem_cont = document.getElementById('info_' + number);
+	var elem_bg = document.getElementById('bg_' + number);
+	//alert(elem.style.display);
 	if(elem.style.display == 'none'){
-		elem_cont.style.display = 'none';
 		elem.style.display = 'block';
+		elem_cont.style.display = 'none';
 		elem_bg.style.display = 'none';
-		//alert("block");
 	}else{
 		elem.style.display = 'none';
 		elem_cont.style.display = 'block';
 		elem_bg.style.display = 'block';
-		//alert("none");
 	}
 }
 
-item.addEventListener("click", example_item_pressed);
+function init(){
+	for (let i = 0; i < 4; i++){
+		var elem = document.getElementById('example_' + i.toString());
+		var elem_cont = document.getElementById('info_' + i.toString());
+		var elem_bg = document.getElementById('bg_' + i.toString());
+		elem.style.display = 'none';
+		elem_cont.style.display = 'block';
+		elem_bg.style.display = 'block';
+	}
+}
+
+item.addEventListener("click", function(){example_item_pressed('1')});
+item_1.addEventListener("click", function(){example_item_pressed('2')});
+init();

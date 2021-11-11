@@ -69,7 +69,7 @@ h3
 
 h4
 {
-    font-size: 2.9rem;
+    font-size: 3rem;
 }
 
 h5
@@ -304,7 +304,7 @@ a:hover
 
 #intro .container-mid
 {
-    position: absolute;
+    position: relative;
     top: 50%;
     width: 100%;
 
@@ -649,10 +649,12 @@ a:hover
         -ms-transform: translateX(4vh);
             transform: translateX(4vh);
 
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     opacity: 0;
     color: #fff;
+	margin:0;
+	padding:0;
 }
 
 #examples .showcase .item:hover .info-even .container-mid h5, #examples .showcase .item:hover .info-odd .container-mid h5
