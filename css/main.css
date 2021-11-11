@@ -31,11 +31,10 @@ ul{
 
 iframe
 {
-	position: static;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
+	position: relative;
+	max-height: 200vh;
+	aspect-ratio: 16 / 9;
+    width: 90%;
 }
 
 h1,
@@ -550,7 +549,8 @@ a:hover
     overflow: hidden;
 
     width: 100%;
-    height: 10rem;
+	min-height: 10rem;
+    height: fit-content;
     margin: 0;
 
     cursor: pointer;
@@ -559,9 +559,12 @@ a:hover
     background: #111;
 	
 	margin-bottom: 5vh;
+	
 	/*width: -webkit-fit-content;
-	height: -webkit-fit-content;
-	width: -moz-fit-content;
+	height: -webkit-fit-content;*/
+	
+	display: inline-block;
+	/*width: -moz-fit-content;
 	height: -moz-fit-content;*/
 }
 
@@ -1253,4 +1256,5 @@ a:hover
     text-align: center;
 	background: rgba(148, 148, 148, 0.5);
 	border-radius: 0.5rem;
+	z-index: 289;
 }
