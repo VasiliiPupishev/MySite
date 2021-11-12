@@ -51,7 +51,6 @@
                     <p class="scroll-animated-from-right">
 						<section id="examples">
 							<div class="showcase">
-							
 								<div id="item_1" class="item scroll-animated-from-right">
 									<div id="info_1" class="info-even">
 										<div class="container-mid">
@@ -66,122 +65,55 @@
 										</div>
 										<iframe src="https://www.youtube.com/embed/3iPB3pqCDcI"  frameborder="0"></iframe>
 										<h5>Описание</h5>
-										<h6 style="text-align: match-parent">Персонаж может стрелять из оружия. Выстрелы производятся из точки взгляда. Есть два режима стрельбы - одиночные выстрелы и автоматическая стрельба. 
-										</h6>
-										<h5>Стэк:</h5>
+										<h6 style="text-align: match-parent">Персонаж может стрелять из оружия. Выстрелы производятся из точки взгляда. Есть два режима стрельбы - одиночные выстрелы и автоматическая стрельба.</h6>
+										<h5>Реализация класса огнестрельного оружия</h5>
+										<ul>
+											<li>Визуальное представление и дополнительные данные.</li>
+											<li>Методы взаимодействия с оружием (выстрел, прицеливание, осмотр, перезарядка).</li>
+											<li>ActorComponent реализующий дуло оружия, и всю логику выстрела ().</li>
+										</ul>
+										<h5>Реализация стрельбы</h5>
+										<ul>
+											<li>PlayerController обрабатывает ввод и вызывает функцию у кэшированного персонажа.</li>
+											<li>Кэшированный персонаж проверяет возможность выполнения действия, и вызывает функцию ActorComponent'а, реализующего инвентарь и разгрузку.</li>
+											<li>Инвентарь и разгрузка проверяет возможность выполнения выстрела, и вызывают функцию у оружия, которое сейчас экипировано.</li>
+											<li>Оружие завершает все действия, так как стрельба - это приоритетное действие, и вызывает функцию выстрела у BarelComponent, запуская таймер для повторения, если автоматический режим стрельбы.</li>
+											<li>BarelComponent производит расчет разброса, производит hitscan, нанося урон.</li>
+										</ul>
+										<h5>Основные инструменты и методы</h5>
 										<p>C++, Hitscan</p>
+										<p> </p>
 									</div>
 								<div id="bg_1" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
 								</div>
 								
-								
-								<div id="item_2" class="item scroll-animated-from-right">
+								<div id="item_2" class="item scroll-animated-from-left">
 									<div id="info_2" class="info-odd">
 										<div class="container-mid">
-											<h4>Инвентарь / Разгрузка</h4>
+											<h4>Инвентарь и Разгрузка</h4>
 										</div>
 									</div>
 									<div id="example_2" class="example-description">
-										<h4 style="padding:3vh; margin:0%">Инвентарь / Разгрузка</h4>
-										<iframe src="https://www.youtube.com/embed/3iPB3pqCDcI" 
-											title="YouTube video player" frameborder="0"></iframe>
+										<div class="example-header">
+											<div class="container-mid">
+												<h4>Инвентарь и Разгрузка</h4>
+											</div>
+										</div>
+										<iframe src="https://www.youtube.com/watch?v=63RZSREVN5Y"  frameborder="0"></iframe>
 										<h5>Описание</h5>
-										<b>Персонаж может стрелять из оружия. Выстрелы производятся из точки взгляда. Есть два режима стрельбы - одиночные выстрелы и автоматическая стрельба.  
-										</b>
+										<h6 style="text-align: match-parent">Персонаж имеет инвентарь, и разгрузку. В инвентаре хранятся объекты, не нуждающиеся в графическом представлении, например - патроны. В разгрузке расположены объекты в соответствующих слотах, которые прикреплены к модели персонажа и имеют графическое представление.</h6>
+										<h5>Реализация инвентаря и разгрузки</h5>
+										<ul>
+											<li>Словари, хронящие объекты в различных слотах.</li>
+											<li>Указатель на текущий экипированный объект.</li>
+											<li>Методы работы с разгрузкой и инвентарем.</li>
+											<li>Метод смены текущего экипированного объекта.</li>
+										</ul>
 										<h5>Стэк:</h5>
 										<p>C++, Hitscan</p>
 									</div>
 								<div id="bg_2" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
 								</div>
-							
-								<div class="item scroll-animated-from-right">
-								<details>
-									<summary>
-										<div class="info-even">
-											<div class="container-mid">
-												<h5>Стрельба</h5>
-											</div>
-										</div>
-									</summary>
-									<div class="example-description">
-										<div class="container-mid">
-											<h5>Стрельба</h5>
-										</div>
-										<h4>Стрельба</h4>
-										<iframe src="https://www.youtube.com/embed/3iPB3pqCDcI" 
-											title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-											gyroscope; picture-in-picture">
-										</iframe>
-										<h5>Описание</h5>
-										<b>Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-											Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-											возможность стрелать из оружия. Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-											Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-											возможность стрелать из оружия. Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-											Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-											возможность стрелать из оружия. 
-										</b>
-										<h5>Стэк:</h5>
-										<p>C++, Hitscan</p>
-									</div>
-								</details>
-								<div class="background-image" style="background-image: url(img/shot.gif)"></div>
-								</div>
-								<div class="example-description">
-									<h4>Стрельба</h4>
-									<p align="center">
-										<iframe class="examples-video" src="https://www.youtube.com/embed/3iPB3pqCDcI" 
-											title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-											gyroscope; picture-in-picture" allowfullscreen>
-										</iframe>
-									</p>
-									<h5>Описание</h5>
-									<b>Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-										Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-										возможность стрелать из оружия. Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-										Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-										возможность стрелать из оружия. Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-										Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-										возможность стрелать из оружия. 
-									</b>
-									<h5>Стэк:</h5>
-									<p>C++, Hitscan</p>
-								</div>
-								
-								<details class="examples-spoiler">
-									<summary>
-										<div class="item scroll-animated-from-right">
-											<div class="info-even">
-												<div class="container-mid">
-													<h5>Стрельба</h5>
-												</div>
-											</div>
-											<div class="background-image" style="background-image: url(img/shot.gif)"></div>
-										</div>
-									</summary>
-									<div  class="example-description animated-from-item-down">
-										<h4>Стрельба</h4>
-										<p align="center">
-											<iframe class="examples-video" src="https://www.youtube.com/embed/3iPB3pqCDcI" 
-												title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-												gyroscope; picture-in-picture" allowfullscreen>
-											</iframe>
-										</p>
-										<h5>Описание</h5>
-										<b>Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-											Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-											возможность стрелать из оружия. Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-											Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-											возможность стрелать из оружия. Персонаж имеет возможность стрелать из оружия. Есть два режима стрельбы - одиночные выстрелы и автоматический. 
-											Выстрел производится из точки взгляда игрока. Есть два режима стрельбыЕсть два режима стрельбы Персонаж имеет 
-											возможность стрелать из оружия. 
-										</b>
-										<h5>Стэк:</h5>
-										<p>C++, Hitscan</p>
-									</div>
-								</details>
-								
-								
 							</div>
 						</section>
                     </p>

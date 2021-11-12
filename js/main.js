@@ -107,4 +107,3 @@ function init(){
 item_1.addEventListener("click", function(){example_item_pressed('1')});
 item_2.addEventListener("click", function(){example_item_pressed('2')});
 init();
-security.fileuri.strict_origin_policy = false;
