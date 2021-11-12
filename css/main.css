@@ -1291,7 +1291,6 @@ a:hover
     cursor: pointer;
     border-radius: 0.5rem;
 	display: inline-block;
-	background-color: rgba(81, 181, 187, .4);
 }
 
 #examples .showcase .item .example-description .example-header .container-mid
