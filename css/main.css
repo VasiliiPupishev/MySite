@@ -552,7 +552,7 @@ a:hover
     overflow: hidden;
 
     width: 100%;
-	min-height: 10rem;
+	min-height: 12rem;
     height: fit-content;
     margin: 0;
 
@@ -1285,7 +1285,7 @@ a:hover
 	position: relative;
     overflow: hidden;
     width: 100%;
-	min-height: 10rem;
+	min-height: 12rem;
     height: fit-content;
     margin: 0;
     cursor: pointer;
