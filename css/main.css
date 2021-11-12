@@ -309,7 +309,7 @@ a:hover
     width: 100%;
 	
 	padding:0; 
-	margin:0
+	margin:0;
 
 	text-align: center;
 	
@@ -360,7 +360,7 @@ a:hover
 
     content: '';
 
-    border-radius: 100px;
+	border-radius: 1rem;
     background: #111;
 }
 
@@ -620,7 +620,7 @@ a:hover
     width: 100%;
 }
 
-#examples .showcase .item .info-even .container-mid, #examples .showcase .item .info-odd .container-mid
+#examples .showcase .item .info-even .container-mid, #examples .showcase .item .info-odd .container-mid, #examples .showcase .item .example-description .example-header .container-mid
 {
     position: absolute;
     top: 50%;
@@ -1263,7 +1263,7 @@ a:hover
     border-bottom: 1px solid #111;
 }
 
-#examples .showcase .examples-description
+#examples .showcase .example-description
 {
 	display: none;
 	max-width: 860px;
@@ -1274,6 +1274,43 @@ a:hover
 	margin:0%;
 }
 
-lookbutton{
-text-align:center;
+#intro .container-mid .lookbutton
+{
+	text-align:center;
+	border-radius: 1rem;
+}
+
+#examples .showcase .item .example-description .example-header
+{
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+	min-height: 10rem;
+    height: fit-content;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+	display: inline-block;
+	background-color: rgba(81, 181, 187, .4);
+}
+
+#examples .showcase .item .example-description .example-header .container-mid
+{
+	position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    padding: 0 6rem;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+#examples .showcase .item .example-description .example-header .container-mid h4
+{
+    font-size: 3rem;
+    text-align: center;
+	margin: 0;
 }

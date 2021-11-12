@@ -82,7 +82,6 @@ function example_item_pressed(number) {
 	var elem = document.getElementById('example_' + number);
 	var elem_cont = document.getElementById('info_' + number);
 	var elem_bg = document.getElementById('bg_' + number);
-	//alert(elem.style.display);
 	if(elem.style.display == 'none'){
 		elem.style.display = 'block';
 		elem_cont.style.display = 'none';
@@ -105,7 +104,7 @@ function init(){
 	}
 }
 
-item.addEventListener("click", function(){example_item_pressed('1')});
-item_1.addEventListener("click", function(){example_item_pressed('2')});
+item_1.addEventListener("click", function(){example_item_pressed('1')});
+item_2.addEventListener("click", function(){example_item_pressed('2')});
 init();
 security.fileuri.strict_origin_policy = false;
