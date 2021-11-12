@@ -82,6 +82,9 @@ function example_item_pressed(number) {
 	var elem = document.getElementById('example_' + number);
 	var elem_cont = document.getElementById('info_' + number);
 	var elem_bg = document.getElementById('bg_' + number);
+	//document.getElementById('item_' + number).scrollIntoView();
+	//window.scroll(0,findPos(document.getElementById('item_' + number)));
+	//EPPZScrollTo.scrollVerticalToElementById('item_' + number, 20);
 	if(elem.style.display == 'none'){
 		elem.style.display = 'block';
 		elem_cont.style.display = 'none';
