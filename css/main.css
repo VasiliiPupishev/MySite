@@ -1274,6 +1274,15 @@ a:hover
 	margin:0%;
 }
 
+#examples .showcase .example-description .example-header ul,
+ #examples .showcase .example-description .example-header h6,
+ #examples .showcase .example-description .example-header h5,
+ #examples .showcase .example-description .example-header p
+{
+	text-align: center;
+	width: 90%;
+}
+
 #intro .container-mid .lookbutton
 {
 	text-align:center;
