@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('a.smooth-scroll').addEventListener('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top - 80
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 5
         }, 500);
 
     });

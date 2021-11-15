@@ -303,6 +303,17 @@ a:hover
     margin-bottom: 0;
 }
 
+#about-examples .container-mid
+{
+    position: relative;
+    width: 100%;
+	text-align: center;
+	
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
 #intro .container-mid
 {
     position: relative;
@@ -315,7 +326,8 @@ a:hover
             transform: translateY(-50%);
 }
 
-#intro .container-mid p.subline
+#intro .container-mid p.subline,
+#about-examples .container-mid p.subline
 {
     font-size: 2.2rem;
     line-height: 1.6em;
@@ -324,7 +336,8 @@ a:hover
     margin-bottom: 2.2em;
 }
 
-#intro .container-mid a
+#intro .container-mid a,
+#about-examples .container-mid a
 {
     font-size: 2.4rem;
     line-height: 2.92em;
@@ -345,7 +358,8 @@ a:hover
     background: none;
 }
 
-#intro .container-mid a:before
+#intro .container-mid a:before,
+#about-examples .container-mid a:before
 {
     position: absolute;
     z-index: -1;
@@ -361,7 +375,8 @@ a:hover
     background: #111;
 }
 
-#intro .container-mid a:after
+#intro .container-mid a:after,
+#about-examples .container-mid a:after
 {
     position: absolute;
     z-index: -1;
@@ -379,12 +394,14 @@ a:hover
     background: #51b5bb;
 }
 
-#intro .container-mid a:hover:after
+#intro .container-mid a:hover:after,
+#about-examples .container-mid a:hover:after
 {
     width: 100%;
 }
 
-#intro .container-mid a i
+#intro .container-mid a i,
+#about-examples .container-mid a i
 {
     font-size: .85em;
 
@@ -496,6 +513,16 @@ a:hover
             -ms-transform: translateY(100%);
                 transform: translateY(100%);
     }
+	
+	#about-examples .container-mid
+    {
+        position: relative;
+        top: 0;
+		
+        -webkit-transform: translateY(150%);
+            -ms-transform: translateY(150%);
+                transform: translateY(150%);
+    }
 }
 
 #about p
@@ -549,6 +576,10 @@ a:hover
 {
 	/*display: table-cell;*/
 	/*margin-top: 50%;*/
+	
+	/* -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); */
 }
 
 #examples .showcase .item
@@ -1367,18 +1398,4 @@ a:hover
     text-align: center;
 	margin: 0;
 	color: white;
-}
-
-#examples .showcase .row
-{
-	background: rgba(81, 181, 187, .4);
-	display: table;
-    width: 100%; /*Optional*/
-    table-layout: fixed; /*Optional*/
-    border-spacing: 10px; /*Optional*/
-}
-
-#examples .showcase .column {
-    display: table-cell;
-    background-color: red; /*Optional*/
 }
