@@ -33,6 +33,7 @@ iframe
 {
 	position: relative;
 	max-height: 200vh;
+	padding-top: 2vh;
 	aspect-ratio: 16 / 9;
     width: 90%;
 }
@@ -1267,20 +1268,59 @@ a:hover
 {
 	display: none;
 	max-width: 860px;
-	width: 90vw;
+	width: 100%;
     text-align: center;
-	background: rgba(81, 181, 187, .4);
 	border-radius: 0.5rem;
 	margin:0%;
+	background-color: rgba(81, 181, 187, .2);
+	/*width: 90%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;*/
+	border-radius: 1rem;
 }
 
-#examples .showcase .example-description .example-header ul,
- #examples .showcase .example-description .example-header h6,
- #examples .showcase .example-description .example-header h5,
- #examples .showcase .example-description .example-header p
+#examples .showcase .example-description .example-footer
+{
+	padding-bottom:1vh;
+}
+
+#examples .showcase .example-description li,
+#examples .showcase .example-description p
 {
 	text-align: center;
 	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#examples .showcase .example-description ul
+{
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 1.7rem;
+}
+
+#examples .showcase .example-description h6
+{
+	font-size: 2rem;
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#examples .showcase .example-description h5
+{
+	text-align: center;
+	width: 90%;
+	background: rgba(81, 181, 187, .4);
+	border-radius: 0.7rem;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 2.6rem;
 }
 
 #intro .container-mid .lookbutton
