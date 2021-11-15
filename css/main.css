@@ -49,7 +49,7 @@ h6
     font-weight: normal;
 	text-align: center;
     letter-spacing: .05em;
-
+	margin: 0;
     color: #000;;
 }
 
@@ -280,7 +280,7 @@ a:hover
 
 .content-area .content-area-inner section h3.headline
 {
-    margin: 0.5em;
+    /*margin: 0.5em;*/
 	text-align: center;
 }
 
@@ -305,13 +305,6 @@ a:hover
 
 #about-examples .container-mid
 {
-    position: relative;
-    width: 100%;
-	text-align: center;
-	
-    -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%);
 }
 
 #intro .container-mid
@@ -519,9 +512,9 @@ a:hover
         position: relative;
         top: 0;
 		
-        -webkit-transform: translateY(150%);
-            -ms-transform: translateY(150%);
-                transform: translateY(150%);
+        -webkit-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+                transform: translateY(100%);
     }
 }
 
@@ -589,7 +582,7 @@ a:hover
     overflow: hidden;
 
     width: 100%;
-	min-height: 12rem;
+	min-height: 9.7rem;
     height: fit-content;
     margin: 0;
 
@@ -1370,7 +1363,7 @@ a:hover
 	position: relative;
     overflow: hidden;
     width: 100%;
-	min-height: 12rem;
+	min-height: 9.7rem;
     height: fit-content;
     margin: 0;
     cursor: pointer;
