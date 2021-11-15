@@ -546,6 +546,17 @@ a:hover
     background: #111;
 }
 
+#about-examples 
+{
+	height: 100vh;
+}
+
+#examples .showcase
+{
+	/*display: table-cell;*/
+	/*margin-top: 50%;*/
+}
+
 #examples .showcase .item
 {
     position: relative;
@@ -1297,7 +1308,7 @@ a:hover
 #examples .showcase .example-description ul
 {
 	text-align: center;
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
     margin-right: auto;
 	font-size: 1.7rem;
@@ -1362,4 +1373,18 @@ a:hover
     text-align: center;
 	margin: 0;
 	color: white;
+}
+
+#examples .showcase .row
+{
+	background: rgba(81, 181, 187, .4);
+	display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+
+#examples .showcase .column {
+    display: table-cell;
+    background-color: red; /*Optional*/
 }
