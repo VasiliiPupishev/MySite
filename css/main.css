@@ -791,7 +791,7 @@ a:hover
 {
     position: relative;
     overflow: hidden;
-    width: 95%;
+    max-width: 95%;
     min-height: 25rem;
     margin: 0;
     cursor: pointer;
