@@ -582,7 +582,7 @@ a:hover
     overflow: hidden;
 
     width: 100%;
-	min-height: calc((100vh - 1vh - 8 * 1vh) / 9);
+	min-height: calc((100vh - 9 * 1vh) / 9);
     height: fit-content;
     margin: 0;
 
@@ -591,7 +591,7 @@ a:hover
     border-radius: 0.5rem;
     background: #fff;
 	
-	margin-bottom: 1vh;
+	padding-bottom: 1vh;
 	
 	display: inline-block;
 }
