@@ -581,7 +581,8 @@ a:hover
 
     overflow: hidden;
 
-    width: 100%;
+    width: 95%;
+	left: 2.5%;
 	min-height: calc((100vh - 9 * 1vh) / 9);
     height: fit-content;
     margin: 0;
