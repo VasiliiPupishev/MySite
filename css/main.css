@@ -164,7 +164,7 @@ a:hover
     text-align: center;
 
     opacity: 1;
-    border-radius: 100%;
+    border-radius: 1rem;
     background-color: #111;
 }
 
@@ -347,7 +347,7 @@ a:hover
             transition: .2s ease;
 
     color: #fff;
-    border-radius: 100px;
+    border-radius: 1rem;
     background: none;
 }
 
@@ -556,14 +556,14 @@ a:hover
     text-align: center;
 
     color: #fff;
-    border-radius: 100px;
+    border-radius: 1rem;
     background: #111;
 }
 
 #about-examples 
 {
 	background-color: rgba(81, 181, 187, .15);
-	border-radius:1rem;
+	border-radius: 1rem;
 	min-height: 100vh;
 	height: fit-content;
 	margin-top: 10vh;
@@ -592,7 +592,7 @@ a:hover
 
     cursor: pointer;
 
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background: #fff;
 	
 	
@@ -674,7 +674,7 @@ a:hover
 	text-align: center;
 	width: 90%;
 	background: rgba(81, 181, 187, .4);
-	border-radius: 0.7rem;
+	border-radius: 1rem;
 	margin-left: auto;
     margin-right: auto;
 	font-size: 2.6rem;
@@ -1062,7 +1062,7 @@ a:hover
 
     text-align: center;
 
-    border-radius: 100px;
+    border-radius: 1rem;
 }
 
 #contact #contact-form
@@ -1093,7 +1093,7 @@ a:hover
 
     color: #fff;
     border: none !important;
-    border-radius: 34px;
+    border-radius: 1rem;
     outline: none !important;
     background: #111;
     -webkit-box-shadow: none !important;
@@ -1185,7 +1185,7 @@ a:hover
 
     content: '';
 
-    border-radius: 100px;
+    border-radius: 1rem;
     background: #111;
 }
 
@@ -1232,7 +1232,7 @@ a:hover
 
     opacity: 0;
     color: #fff;
-    border-radius: 3em;
+    border-radius: 1rem;
     background: limegreen;
 }
 
@@ -1273,7 +1273,7 @@ a:hover
     text-align: center;
 
     color: #fff;
-    border-radius: 100%;
+    border-radius: 1rem;
     background: none;
 }
 
@@ -1289,7 +1289,7 @@ a:hover
 
     content: '';
 
-    border-radius: 100px;
+    border-radius: 1rem;
     background: #111;
 }
 
@@ -1399,7 +1399,7 @@ a:hover
     height: fit-content;
     margin: 0;
     cursor: pointer;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 	display: inline-block;
 }
 
