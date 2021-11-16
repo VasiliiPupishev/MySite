@@ -651,7 +651,9 @@ a:hover
     width: 100%;
 }
 
-#examples .showcase .item .info-even .container-mid, #examples .showcase .item .info-odd .container-mid, #examples .showcase .item .example-description .example-header .container-mid
+#examples .showcase .item .info-even .container-mid, 
+#examples .showcase .item .info-odd .container-mid, 
+#examples .showcase .item .example-description .example-header .container-mid
 {
     position: absolute;
     top: 50%;
@@ -665,13 +667,19 @@ a:hover
             transform: translateY(-50%);
 }
 
+#examples .showcase .item .example-description h5
+{
+	padding-bottom: 0.1vh;
+	padding-top: 0.1vh;
+}
 
-#examples  .showcase .item .info-even .container-mid h5, #examples  .showcase .item .info-odd .container-mid h5
+#examples  .showcase .item .info-even .container-mid h5, 
+#examples  .showcase .item .info-odd .container-mid h5
 {
     -webkit-transform: translateX(4vh);
         -ms-transform: translateX(4vh);
             transform: translateX(4vh);
-
+	
     opacity: 0;
 	text-align: center;
     color: #fff;
@@ -744,7 +752,8 @@ a:hover
     opacity: 0;
 }
 
-#examples .showcase .item:hover .info-even .container-mid p, #examples .showcase .item:hover .info-odd .container-mid p
+#examples .showcase .item:hover .info-even .container-mid p, 
+#examples .showcase .item:hover .info-odd .container-mid p
 {
     -webkit-transition: .2s ease .3s;
          -o-transition: .2s ease .3s;
