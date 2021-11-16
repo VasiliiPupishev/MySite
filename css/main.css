@@ -591,7 +591,6 @@ a:hover
     border-radius: 0.5rem;
     background: #fff;
 	
-	padding-bottom: 1vh;
 	
 	display: inline-block;
 }
@@ -668,8 +667,15 @@ a:hover
 
 #examples .showcase .item .example-description h5
 {
-	padding-bottom: 0.1vh;
-	padding-top: 0.1vh;
+	text-align: center;
+	width: 90%;
+	background: rgba(81, 181, 187, .4);
+	border-radius: 0.7rem;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 2.6rem;
+	padding-bottom: 0.7vh;
+	padding-top: 0.7vh;
 }
 
 #examples  .showcase .item .info-even .container-mid h5, 
@@ -1353,15 +1359,15 @@ a:hover
     margin-right: auto;
 }
 
-#examples .showcase .example-description ul
+#examples .showcase .item .example-description ul
 {
 	text-align: center;
 	width: 100%;
 	margin-left: auto;
     margin-right: auto;
 	font-size: 1.7rem;
-	padding-bottom: 0.2vh;
-	padding-top: 0.2vh; 
+	margin-bottom: 1vh;
+	margin-top: 1vh; 
 }
 
 #examples .showcase .example-description h6
@@ -1373,17 +1379,6 @@ a:hover
     margin-right: auto;
 	padding-bottom: 0.2vh;
 	padding-top: 0.2vh; 
-}
-
-#examples .showcase .example-description h5
-{
-	text-align: center;
-	width: 90%;
-	background: rgba(81, 181, 187, .4);
-	border-radius: 0.7rem;
-	margin-left: auto;
-    margin-right: auto;
-	font-size: 2.6rem;
 }
 
 #intro .container-mid .lookbutton
