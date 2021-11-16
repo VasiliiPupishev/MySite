@@ -1360,6 +1360,8 @@ a:hover
 	margin-left: auto;
     margin-right: auto;
 	font-size: 1.7rem;
+	padding-bottom: 0.2vh;
+	padding-top: 0.2vh; 
 }
 
 #examples .showcase .example-description h6
@@ -1369,6 +1371,8 @@ a:hover
 	width: 90%;
 	margin-left: auto;
     margin-right: auto;
+	padding-bottom: 0.2vh;
+	padding-top: 0.2vh; 
 }
 
 #examples .showcase .example-description h5
@@ -1393,7 +1397,7 @@ a:hover
 	position: relative;
     overflow: hidden;
     width: 100%;
-	min-height: calc((100vh - 9 * 1vh) / 9);
+	min-height: calc((100vh - 3.4rem - 8 * 1vh) / 8);
     height: fit-content;
     margin: 0;
     cursor: pointer;

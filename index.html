@@ -61,7 +61,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Стрельба и Оружие</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/3iPB3pqCDcI"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -70,7 +70,7 @@
 											<ul>
 												<li>Визуальное представление и дополнительные данные.</li>
 												<li>Методы взаимодействия с оружием (выстрел, прицеливание, осмотр, перезарядка).</li>
-												<li>ActorComponent реализующий дуло оружия, и всю логику выстрела ().</li>
+												<li>ActorComponent(BarelComponent) реализует дуло оружия, и логику выстрела.</li>
 											</ul>
 											<h5>Реализация стрельбы</h5>
 											<ul>
@@ -85,7 +85,7 @@
 												<p>C++, Hitscan, Наследование, Интерфейсы, DataTable, Структуры, Enum</p>
 											</div>
 										</div>
-									<div id="bg_1" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_1" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_2" class="item scroll-animated-from-left">
@@ -99,7 +99,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Инвентарь и Разгрузка</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -116,7 +116,7 @@
 												<p>C++, Enum, TMap, Delegate</p>
 											</div>
 										</div>
-									<div id="bg_2" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_2" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_3" class="item scroll-animated-from-right">
@@ -130,7 +130,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Взаимодейсвтие с предметами</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -146,7 +146,7 @@
 												<p>C++, LineTrace, Interface, Widgets</p>
 											</div>
 										</div>
-									<div id="bg_3" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_3" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_4" class="item scroll-animated-from-left">
@@ -160,7 +160,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Передвижение</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -178,7 +178,7 @@
 												<p>C++, TimeLine, CurveFloat</p>
 											</div>
 										</div>
-									<div id="bg_4" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_4" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_5" class="item scroll-animated-from-right">
@@ -192,24 +192,23 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Система сохранений</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
-											<h6>Персонаж имеет инвентарь, и разгрузку. В инвентаре хранятся объекты, не нуждающиеся в графическом представлении, например - патроны. В разгрузке в соответствующих слотах расположены объекты, которые можно взять в руки. Они прикреплены к модели персонажа и имеют графическое представление.</h6>
-											<h5>Реализация инвентаря и разгрузки</h5>
+											<h6>Персонаж при отдыхе у костра может сохраниться. Сохраняются состояния всех объектов, которые реализуют интерфейс SaveSubsystemInterface. Загрузить сохранение можно после смерти.</h6>
+											<h5>Реализация системы сохранений</h5>
 											<ul>
-												<li>Словари, хронящие объекты в различных слотах.</li>
-												<li>Указатель на текущий экипированный объект.</li>
-												<li>Методы работы с разгрузкой и инвентарем.</li>
-												<li>Метод смены текущего экипированного объекта.</li>
+												<li>Обход всех объектов нв уровне.</li>
+												<li>Те объекты, которые реализуют интерфейс SaveSubsystemInterface, сериализируются.</li>
+												<li>При загрузки сохраннеия берется файл и из него десериализируются все объекты.</li>
 											</ul>
 											<div class="example-footer">
 												<h5>Основные инструменты и методы</h5>
-												<p>C++, Hitscan</p>
+												<p>C++, Интерфейсы, Структуры, Делегаты,</p>
 											</div>
 										</div>
-									<div id="bg_5" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_5" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_6" class="item scroll-animated-from-left">
@@ -223,7 +222,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Виджеты</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -248,7 +247,7 @@
 												<p>C++, UserWidgets</p>
 											</div>
 										</div>
-									<div id="bg_6" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_6" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_7" class="item scroll-animated-from-right">
@@ -262,7 +261,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>Искусственный интеллект</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -272,7 +271,7 @@
 												<p>C++, PerceptionComponent</p>
 											</div>
 										</div>
-									<div id="bg_7" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_7" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 									
 									<div id="item_8" class="item scroll-animated-from-left">
@@ -286,7 +285,7 @@
 												<div style="z-index:2" class="container-mid">
 													<h4>GAS</h4>
 												</div>
-												<div class="background-image" style="background-image: url(img/shot.gif); z-index:0; background-color:#fff"></div>
+												<div class="background-image" style="background-image: url(img/shot.jpg); z-index:0; background-color:#fff"></div>
 											</div>
 											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
 											<h5>Описание</h5>
@@ -303,7 +302,7 @@
 												<p>C++, Hitscan</p>
 											</div>
 										</div>
-									<div id="bg_8" class="background-image" style="background-image: url(img/shot.gif); z-index:-1; background-color:#fff"></div>
+									<div id="bg_8" class="background-image" style="background-image: url(img/shot.jpg); z-index:-1; background-color:#fff"></div>
 									</div>
 								
 							</section>
