@@ -94,7 +94,6 @@ function example_item_pressed(number) {
 }
 
 function init(){
-	//alert("hello");
 	for (let i = 1; i <= 8; i++){
 		var elem = document.getElementById('example_' + i.toString());
 		var elem_cont = document.getElementById('info_' + i.toString());

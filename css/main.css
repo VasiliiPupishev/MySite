@@ -50,7 +50,7 @@ h6
 	text-align: center;
     letter-spacing: .05em;
 	margin: 0;
-    color: #000;;
+    color: #000;
 }
 
 h1
@@ -348,7 +348,8 @@ a:hover
 
     color: #fff;
     border-radius: 1rem;
-    background: none;
+	background-color: #d0e1ca;
+	z-index:1;
 }
 
 #intro .container-mid a:before,
@@ -384,7 +385,7 @@ a:hover
          -o-transition: .2s ease;
             transition: .2s ease;
 
-    background: #51b5bb;
+    background: #aec5aa;
 }
 
 #intro .container-mid a:hover:after,
@@ -562,7 +563,6 @@ a:hover
 
 #about-examples 
 {
-	background-color: rgba(81, 181, 187, .15);
 	border-radius: 1rem;
 	min-height: 100vh;
 	height: fit-content;
@@ -571,12 +571,6 @@ a:hover
 
 #examples .showcase
 {
-	/*display: table-cell;*/
-	/*margin-top: 50%;*/
-	
-	/* -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); */
 }
 
 #examples .showcase .item
@@ -604,11 +598,6 @@ a:hover
     margin-bottom: 0;
 }
 
-/*	
-	left: 100%;
-	transform: translateX(-100%);
-*/
-
 #examples .showcase .item .info-even 
 {
     position: absolute;
@@ -624,7 +613,7 @@ a:hover
             transition: .2s ease;
 
     color: #fff;
-    background: rgba(81, 181, 187, .7);
+    background: #aec5aa;
 }
 
 #examples .showcase .item .info-odd
@@ -645,7 +634,7 @@ a:hover
             transition: .2s ease;
 
     color: #fff;
-    background: rgba(81, 181, 187, .7);
+    background: #aec5aa;
 }
 
 #examples .showcase .item:hover .info-even, #examples .showcase .item:hover .info-odd
@@ -669,11 +658,15 @@ a:hover
             transform: translateY(-50%);
 }
 
+/*
+https://color.romanuke.com/tsvetovaya-palitra-4166/
+*/
+
 #examples .showcase .item .example-description h5
 {
 	text-align: center;
 	width: 90%;
-	background: rgba(81, 181, 187, .4);
+	background: #d0e1ca;
 	border-radius: 1rem;
 	margin-left: auto;
     margin-right: auto;
@@ -745,6 +738,7 @@ a:hover
         -ms-transform: translateX(0);
             transform: translateX(0);
 
+	color: black;
     opacity: 1;
 }
 
@@ -844,7 +838,7 @@ a:hover
             transition: .25s ease;
 
     color: #fff;
-    background: #51b5bb;
+    background: #aec5aa;
 }
 
 #work .showcase .item .info-odd
@@ -862,7 +856,7 @@ a:hover
             transition: .25s ease;
 
     color: #fff;
-    background: #51b5bb;
+    background: #aec5aa;
 }
 
 #work .showcase .item:hover .info-even, 
@@ -1204,7 +1198,7 @@ a:hover
          -o-transition: .2s ease;
             transition: .2s ease;
 
-    background: #51b5bb;
+    background: #aec5aa;
 }
 
 #contact #contact-form button:hover:after
@@ -1308,7 +1302,7 @@ a:hover
          -o-transition: .2s ease;
             transition: .2s ease;
 
-    background: #51b5bb;
+    background: #aec5aa;
 }
 
 #footer .social-icons li:hover:after
@@ -1344,7 +1338,7 @@ a:hover
 	width: 100%;
     text-align: center;
 	margin:0%;
-	background-color: rgba(81, 181, 187, .2);
+	background-color: #aec5aa;
 	border-radius: 1rem;
 }
 
@@ -1422,7 +1416,7 @@ a:hover
     font-size: 3rem;
     text-align: center;
 	margin: 0;
-	color: white;
+	color: black;
 }
 /*
 https://embed.keymailer.co/g/games/94952
