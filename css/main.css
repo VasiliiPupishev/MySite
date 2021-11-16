@@ -562,7 +562,11 @@ a:hover
 
 #about-examples 
 {
-	height: 100vh;
+	background-color: rgba(81, 181, 187, .15);
+	border-radius:1rem;
+	min-height: 100vh;
+	height: fit-content;
+	margin-top: 10vh;
 }
 
 #examples .showcase
