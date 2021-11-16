@@ -583,8 +583,7 @@ a:hover
 
     width: 95%;
 	left: 2.5%;
-	min-height: calc((100vh - 9 * 1vh) / 9);
-    height: fit-content;
+	min-height: calc((100vh - 3.4rem - 8 * 1vh) / 8);
     margin: 0;
 
     cursor: pointer;
