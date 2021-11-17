@@ -94,7 +94,7 @@ function example_item_pressed(number) {
 }
 
 function init(){
-	for (let i = 1; i <= 8; i++){
+	for (let i = 1; i <= 6; i++){
 		var elem = document.getElementById('example_' + i.toString());
 		var elem_cont = document.getElementById('info_' + i.toString());
 		var elem_bg = document.getElementById('bg_' + i.toString());
@@ -111,5 +111,5 @@ item_3.addEventListener("click", function(){example_item_pressed('3')});
 item_4.addEventListener("click", function(){example_item_pressed('4')});
 item_5.addEventListener("click", function(){example_item_pressed('5')});
 item_6.addEventListener("click", function(){example_item_pressed('6')});
-item_7.addEventListener("click", function(){example_item_pressed('7')});
-item_8.addEventListener("click", function(){example_item_pressed('8')});
+/* item_7.addEventListener("click", function(){example_item_pressed('7')});
+item_8.addEventListener("click", function(){example_item_pressed('8')}); */

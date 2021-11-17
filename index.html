@@ -66,7 +66,6 @@
 												<div class="background-image" style="background-color:#aec5aa; /*/*background-image: url(img/shot.jpg);*/*/ z-index:0;"></div>
 											</div>
 											<img class="example-image" style="width: 90%; margin-bottom: 1vh;" src="img/ItemFire.gif"  frameborder="0"/img>
-											<!-- <iframe src="https://www.youtube.com/embed/3iPB3pqCDcI"  frameborder="0"></iframe> -->
 											<h5>Описание</h5>
 											<h6>Персонаж может стрелять из оружия. Выстрелы производятся из точки взгляда. Есть два режима стрельбы - одиночные выстрелы и автоматическая стрельба.</h6>
 											<h5>Реализация класса огнестрельного оружия</h5>
@@ -88,7 +87,7 @@
 												<p>C++, Hitscan, Наследование, Интерфейсы, DataTable, Структуры, Enum</p>
 											</div>
 										</div>
-									<div id="bg_1" class="background-image" style="/*/*background-image: url(img/shot.jpg);*/*/ z-index:-1; background-color:#d0e1ca "></div>
+									<div id="bg_1" class="background-image" style="/*/*background-image: url(img/shot.jpg);*/*/ z-index:-1; background-color:#d0e1ca"></div>
 									</div>
 									
 									<div id="item_2" class="item scroll-animated-from-left">
@@ -187,40 +186,10 @@
 									<div id="item_5" class="item scroll-animated-from-right">
 										<div id="info_5" class="info-even">
 											<div class="container-mid">
-												<h4>Система сохранений</h4>
-											</div>
-										</div>
-										<div id="example_5" class="example-description">
-											<div class="example-header">
-												<div style="z-index:2" class="container-mid">
-													<h4>Система сохранений</h4>
-												</div>
-												<div class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:0; background-color:#aec5aa"></div>
-											</div>
-											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
-											<h5>Описание</h5>
-											<h6>Персонаж при отдыхе у костра может сохраниться. Сохраняются состояния всех объектов, которые реализуют интерфейс SaveSubsystemInterface. Загрузить сохранение можно после смерти.</h6>
-											<h5>Реализация системы сохранений</h5>
-											<ul>
-												<li>Обход всех объектов нв уровне.</li>
-												<li>Те объекты, которые реализуют интерфейс SaveSubsystemInterface, сериализируются.</li>
-												<li>При загрузки сохраннеия берется файл и из него десериализируются все объекты.</li>
-											</ul>
-											<div class="example-footer">
-												<h5>Основные инструменты и методы</h5>
-												<p>C++, Интерфейсы, Структуры, Делегаты,</p>
-											</div>
-										</div>
-									<div id="bg_5" class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:-1; background-color:#d0e1ca "></div>
-									</div>
-									
-									<div id="item_6" class="item scroll-animated-from-left">
-										<div id="info_6" class="info-odd">
-											<div class="container-mid">
 												<h4>Виджеты</h4>
 											</div>
 										</div>
-										<div id="example_6" class="example-description">
+										<div id="example_5" class="example-description">
 											<div class="example-header">
 												<div style="z-index:2" class="container-mid">
 													<h4>Виджеты</h4>
@@ -250,28 +219,58 @@
 												<p>C++, UserWidgets</p>
 											</div>
 										</div>
-									<div id="bg_6" class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:-1; background-color:#d0e1ca "></div>
+									<div id="bg_5" class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:-1; background-color:#d0e1ca "></div>
 									</div>
 									
-									<div id="item_7" class="item scroll-animated-from-right">
-										<div id="info_7" class="info-even">
+									<div id="item_6" class="item scroll-animated-from-left">
+										<div id="info_6" class="info-odd">
 											<div class="container-mid">
 												<h4>Искусственный интеллект</h4>
 											</div>
 										</div>
-										<div id="example_7" class="example-description">
+										<div id="example_6" class="example-description">
 											<div class="example-header">
 												<div style="z-index:2" class="container-mid">
 													<h4>Искусственный интеллект</h4>
 												</div>
 												<div class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:0; background-color:#aec5aa"></div>
 											</div>
-											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
+											<img src="img/ItemAI.gif" style="width: 90%; margin-bottom: 1vh;"  frameborder="0"/img>
 											<h5>Описание</h5>
 											<h6>Реализована турель с AI. Она имеет 4 состояния: сон, поиск, исследование и атака. В состоянии сна турель не двигается, но если персонаж пройдет перед ней, она начнет исследовать его и может начать атаковать. Если турель уже "разбудили" и она не видит цели, то начинает вращаться - осматриваться. Турель можно убить.</h6>
 											<div class="example-footer">
 												<h5>Основные инструменты и методы</h5>
 												<p>C++, PerceptionComponent</p>
+											</div>
+										</div>
+									<div id="bg_6" class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:-1; background-color:#d0e1ca "></div>
+									</div>
+									
+									<!-- <div id="item_7" class="item scroll-animated-from-right">
+										<div id="info_7" class="info-even">
+											<div class="container-mid">
+												<h4>Система сохранений</h4>
+											</div>
+										</div>
+										<div id="example_7" class="example-description">
+											<div class="example-header">
+												<div style="z-index:2" class="container-mid">
+													<h4>Система сохранений</h4>
+												</div>
+												<div class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:0; background-color:#aec5aa"></div>
+											</div>
+											<iframe src="https://www.youtube.com/embed/63RZSREVN5Y"  frameborder="0"></iframe>
+											<h5>Описание</h5>
+											<h6>Персонаж при отдыхе у костра может сохраниться. Сохраняются состояния всех объектов, которые реализуют интерфейс SaveSubsystemInterface. Загрузить сохранение можно после смерти.</h6>
+											<h5>Реализация системы сохранений</h5>
+											<ul>
+												<li>Обход всех объектов нв уровне.</li>
+												<li>Те объекты, которые реализуют интерфейс SaveSubsystemInterface, сериализируются.</li>
+												<li>При загрузки сохраннеия берется файл и из него десериализируются все объекты.</li>
+											</ul>
+											<div class="example-footer">
+												<h5>Основные инструменты и методы</h5>
+												<p>C++, Интерфейсы, Структуры, Делегаты,</p>
 											</div>
 										</div>
 									<div id="bg_7" class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:-1; background-color:#d0e1ca "></div>
@@ -306,7 +305,7 @@
 											</div>
 										</div>
 									<div id="bg_8" class="background-image" style="/*background-image: url(img/shot.jpg);*/ z-index:-1; background-color:#d0e1ca "></div>
-									</div>
+									</div> -->
 								</div>
 							</section>
 						</p>
@@ -356,7 +355,7 @@
 								<div class="container-mid">
 									<h3>АО "Механобр инжиниринг"</h3>
 									<h4>Инженер</h4>
-									<p>Март 2020 - Настоящее время</p>
+									<p style="color:#000;">Март 2020 - Настоящее время</p>
 									<h4>Задачи:</h4>
 									<p>BIM 3D моделирование, Разработка утилит</p>
 									<h4>Стэк:</h4>
