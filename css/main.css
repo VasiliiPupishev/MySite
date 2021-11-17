@@ -313,7 +313,7 @@ a:hover
     width: 100%;
 	text-align: center;
 	
-	 transform: translateY(75%);
+	/*transform: translateY(75%);*/
     /* -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); */
@@ -656,6 +656,7 @@ a:hover
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+	/*background: #aec5aa;*/
 }
 
 /*
@@ -1398,20 +1399,6 @@ https://color.romanuke.com/tsvetovaya-palitra-4026/
     cursor: pointer;
     border-radius: 1rem;
 	display: inline-block;
-}
-
-#examples .showcase .item .example-description .example-header .container-mid
-{
-	position: absolute;
-    top: 50%;
-    left: 0;
-
-    width: 100%;
-    padding: 0 6rem;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
 }
 
 #examples .showcase .item .example-description .example-header .container-mid h4
