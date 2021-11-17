@@ -305,16 +305,15 @@ a:hover
 
 #intro .intro-part
 {
-	height: calc((100vh - 2vh) / 3);
+	height: calc(2 * 98vh / 7);
 }
 
 #intro .container-mid
 {
-    position: absolute;
+    position: relative;
     width: 100%;
 	text-align: center;
-	height: 20vh;
-	height: calc((100vh - 2vh) / 3);
+	height: calc(3 * 98vh / 7);
 }
 
 #intro .container-mid p.subline,
@@ -323,8 +322,11 @@ a:hover
     font-size: 2.2rem;
     line-height: 1.6em;
 
-    margin-top: 2em;
-    margin-bottom: 2.2em;
+    /* margin-top: 2em;
+    margin-bottom: 2.2em; */
+	
+	padding-top: 2em;
+    padding-bottom: 2.2em;
 }
 
 #intro .container-mid a,
@@ -344,7 +346,7 @@ a:hover
          -o-transition: .2s ease;
             transition: .2s ease;
 
-    color: #fff;
+    color: #000;
     border-radius: 1rem;
 	background-color: #d0e1ca;
 	z-index:1;
@@ -353,7 +355,7 @@ a:hover
 #intro .container-mid a:before,
 #about-examples .container-mid a:before
 {
-    position: absolute;
+    position: relative;
     z-index: -1;
     top: 0;
     left: 0;
@@ -498,7 +500,7 @@ a:hover
 
     #intro .container-mid
     {
-        position: absolute;
+        position: relative;
 		width: 100%;
 		text-align: center;
 		height: calc((100vh - 2vh) / 3);

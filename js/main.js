@@ -18,7 +18,7 @@ window.onload = function() {
     subline.insertAdjacentHTML('afterbegin', age);
 };
 
-
+$('#div').css({ transform: 'scale(.5)' });
 document.addEventListener('DOMContentLoaded', function(){
 	"use strict";
     
