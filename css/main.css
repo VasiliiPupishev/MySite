@@ -574,7 +574,8 @@ a:hover
 {
 }
 
-#examples .showcase .item
+#examples .showcase .item,
+#examples .showcase .item-look
 {
     position: relative;
 
@@ -582,7 +583,7 @@ a:hover
 
     width: 95%;
 	left: 2.5%;
-	min-height: calc((100vh - 3.4rem - 6 * 1vh) / 6);
+	min-height: calc((100vh - 3.4rem - 7 * 1vh) / 7);
     margin: 0;
 
     cursor: pointer;
@@ -788,7 +789,8 @@ https://color.romanuke.com/tsvetovaya-palitra-4166/
     background: #fff;
 }
 
-#examples .showcase .item .background-image
+#examples .showcase .item .background-image,
+#examples .showcase .item-look .background-image
 {
     position: absolute;
     top: 0;
@@ -1394,7 +1396,7 @@ https://color.romanuke.com/tsvetovaya-palitra-4026/
 	position: relative;
     overflow: hidden;
     width: 100%;
-	min-height: calc((100vh - 3.4rem - 6 * 1vh) / 6);
+	min-height: calc((100vh - 3.4rem - 7 * 1vh) / 7);
     height: fit-content;
     margin: 0;
     cursor: pointer;

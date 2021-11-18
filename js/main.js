@@ -111,5 +111,9 @@ item_3.addEventListener("click", function(){example_item_pressed('3')});
 item_4.addEventListener("click", function(){example_item_pressed('4')});
 item_5.addEventListener("click", function(){example_item_pressed('5')});
 item_6.addEventListener("click", function(){example_item_pressed('6')});
-/* item_7.addEventListener("click", function(){example_item_pressed('7')});
-item_8.addEventListener("click", function(){example_item_pressed('8')}); */
+var elem_cont1 = document.getElementById('info_7');
+var elem_bg1 = document.getElementById('bg_7');
+elem_cont1.style.display = 'block';
+elem_bg1.style.display = 'block';
+//item_7.addEventListener("click", function(){window.open('https://github.com/VasiliiPupishev/FinalDance', '_blank').focus(););
+/*item_8.addEventListener("click", function(){example_item_pressed('8')}); */
